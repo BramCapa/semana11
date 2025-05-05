@@ -32,11 +32,19 @@
 
     <!-- Barra de búsqueda y filtro -->
     <div style="padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-        <!-- Campo de búsqueda (solo visual) -->
-        <div style="border: 1px solid #ccc; border-radius: 25px; padding: 8px 15px; background-color: #fff;">
-            Buscar
-        </div>
-      
+        <!-- Campo de búsqueda funcional -->
+        <form action="principal.html" method="GET" style="display: flex; align-items: center; width: 100%; margin-right: 20px;">
+            <input 
+                type="text" 
+                name="query" 
+                placeholder="Buscar únicamente en la página principal..." 
+                style="flex: 1; border: 1px solid #ccc; border-radius: 25px; padding: 8px 15px; background-color: #fff; outline: none; font-size: 1em;">
+            <button 
+                type="submit" 
+                style="margin-left: 10px; background-color: #28a745; color: white; border: none; border-radius: 25px; padding: 8px 15px; cursor: pointer; font-size: 1em;">
+                Buscar
+            </button>
+        </form>
     </div>
 
     <!-- Contenedor principal de los invernaderos -->
